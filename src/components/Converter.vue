@@ -71,8 +71,14 @@ export default {
             if (isNaN(parseInt(val.slice(-1), 16))) {
                 this.hex = this.hex.slice(0, -1)
             }
-            if (this.hex === '') {
+            if (this.hex === '' || this.hex === '#') {
                  this.hex = '#'
+                 this.red = ''
+                 this.green = ''
+                 this.blue = ''
+                 this.redHex = ''
+                 this.greenHex = ''
+                 this.blueHex = ''
             }
             if (this.hex.charAt(0) !== '#') {
                  this.hex = '#'
@@ -85,7 +91,7 @@ export default {
         },
         red (val) {
             if (isNaN(val)) {
-                this.red = 0
+                this.red = ''
             }
             if (val > 255) {
                 this.red = 255
@@ -101,7 +107,7 @@ export default {
         },
         green (val) {
             if (isNaN(val)) {
-                this.green = 0
+                this.green = ''
             }
             if (val > 255) {
                 this.green = 255
@@ -117,7 +123,7 @@ export default {
         },
         blue (val) {
             if (isNaN(val)) {
-                this.blue = 0
+                this.blue = ''
             }
             if (val > 255) {
                 this.blue = 255
