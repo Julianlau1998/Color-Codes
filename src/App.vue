@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <navbar />
+    <bottom-nav />
     <router-view/>
   </div>
 </template>
+
+<script>
+import navbar from './components/Navbar'
+import bottomNav from './components/BottomNav'
+
+export default {
+  components:{
+    navbar,
+    bottomNav
+  } 
+}
+</script>
 
 <style>
 #app {
@@ -16,17 +26,41 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+body {
+  background-color: #FFFFFF;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+.swipe-component-left-enter-active,
+  .swipe-component-left-leave-active {
+    transition: transform 0.2s;
+  }
+  .swipe-component-left-leave {
+    transform: translateX(0%);
+  }
+  .swipe-component-left-leave-to {
+    transform: translateX(-100%);
+  }
+  .swipe-component-left-enter {
+    transform: translateX(100%);
+  }
+  .swipe-component-left-enter-to {
+    transform: translateX(0%);
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .swipe-component-right-enter-active,
+  .swipe-component-right-leave-active{
+    transition: transform 0.2s;
+  }
+  .swipe-component-right-enter {
+    transform: translateX(-100%);
+  }
+  .swipe-component-right-enter-to {
+    transform: translateX(0%);
+  } 
+  .swipe-component-right-leave {
+    transform: translateX(0%);
+  }
+  .swipe-component-right-leave-to {
+    transform: translateX(100%);
+  }
 </style>

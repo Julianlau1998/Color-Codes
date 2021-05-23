@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <transition
+        :name= componentTransitionName 
+        mode="out-in"
+        ref="componentTransition"
+      >
+        <ColorPicker v-if="!converter" />
+        <Converter v-else />
+      </transition>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ColorPicker from '../components/ColorPicker'
+import Converter from '../components/Converter'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    ColorPicker,
+    Converter
+  },
+  computed: {
+    converter () {
+      return this.$store.state.converter
+    },
+    componentTransitionName () {
+      return this.$store.state.componentTransition
+    }
   }
 }
 </script>
+
+<style>
+</style>
