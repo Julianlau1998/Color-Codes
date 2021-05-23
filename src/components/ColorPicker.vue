@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 id="clickText">
+    <h2 id="clickText" class="noselect">
         Click the Box to pick a color
     </h2>
     <input
@@ -64,6 +64,7 @@
             @click="copyRGB"
         >
     </h2>
+    <br><br>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="converter">
-      <h2>Hex:</h2>
+      <h2 class="noselect">Hex:</h2>
       <input
         type="text"
         id="hex" 
@@ -11,7 +11,7 @@
         autocomplete="off"
     >
       <br>
-      <h2>RGB:</h2>
+      <h2 class="noselect">RGB:</h2>
       <input
         type="number"
         id="redInput"
@@ -154,6 +154,8 @@ export default {
     }
     input {
         border-radius: 20px;
+        width: 75%;
+        max-width: 25rem;
         height: 2rem;
         font-size: 1.3rem;
         padding-left: 0.5rem;
@@ -195,5 +197,9 @@ export default {
 
     input {
         outline: none;
+    }
+
+
+    @media (min-width: 1000px) {
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="bottomNav">
-      <p class='link'>
+      <p class='link noselect'>
       <span
         @click="converter(false)"
         class="marginRight marginBottom nevElement"
@@ -30,10 +30,10 @@ export default {
     mounted () {
         if (this.current) {
             this.$refs.converter.style.opacity = 1
-            this.$refs.info.style.opacity = 0.4
+            this.$refs.info.style.opacity = 0.5
         } else {
             this.$refs.converter.style.opacity = 1
-            this.$refs.info.style.opacity = 0.4
+            this.$refs.info.style.opacity = 0.5
         }
     },
     computed: {
@@ -45,9 +45,9 @@ export default {
         current (val) {
             if (!val) {
                 this.$refs.converter.style.opacity = 1
-                this.$refs.info.style.opacity = 0.6
+                this.$refs.info.style.opacity = 0.5
             } else {
-                this.$refs.converter.style.opacity = 0.6
+                this.$refs.converter.style.opacity = 0.5
                 this.$refs.info.style.opacity = 1
             }
         }
@@ -69,7 +69,7 @@ export default {
     }
     .link {
         color: black;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.3rem;
         -webkit-tap-highlight-color: transparent;
         cursor: pointer;
@@ -80,6 +80,15 @@ export default {
     }
     .marginRight {
         margin-right: 2.5rem;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     }
 
     /* @media (max-width: 410px) {

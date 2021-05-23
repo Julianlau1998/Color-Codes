@@ -75,7 +75,7 @@ export default {
     right: 2.2rem;
     top: 3.2rem;
     font-weight: 600;
-    padding-top: 0.65rem;
+    padding-top: 0.55rem;
   }
   #rate {
     margin-top: 0.6rem;
