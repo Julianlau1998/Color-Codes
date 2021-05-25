@@ -1,17 +1,17 @@
 <template>
   <div class="navbar">
-    <img
+    <!-- <img
       src="../../public/img/menu.png"
       alt="menu icon"
       class="menu"
       @click="menu=!menu"
-      >
+      > -->
     <h3
       id="navTitle"
     >
       Color Codes
     </h3>
-    <div
+    <!-- <div
       v-if="menu"
       class="openMenu"
     >
@@ -21,7 +21,7 @@
       >
         Rate this app
       </a>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
   <div class="converter">
-      <h2 class="noselect">Hex:</h2>
+      <h2 class="noselect">
+          Hex:
+        </h2>
       <input
         type="text"
         id="hex" 
@@ -11,7 +13,9 @@
         autocomplete="off"
     >
       <br>
-      <h2 class="noselect">RGB:</h2>
+      <h2 class="noselect">
+          RGB:
+        </h2>
       <input
         type="number"
         id="redInput"
@@ -41,7 +45,10 @@
         maxlength="3"
         autocomplete="off"
     >
-    <div id="colorBox" v-bind:style="{ backgroundColor: hex}">
+    <div
+        id="colorBox"
+        v-bind:style="{ backgroundColor: hex}"
+    >
     </div>
   </div>
 </template>
