@@ -90,15 +90,6 @@ export default {
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     }
-
-    /* @media (max-width: 410px) {
-        .marginLeft {
-            margin-left: 1.5rem;
-        }
-        .marginRight {
-            margin-right: 1.5rem;
-        }
-    } */
     @media (max-width: 300px) {
         .marginLeft {
             margin-left: 1rem;
