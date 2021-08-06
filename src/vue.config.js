@@ -3,6 +3,7 @@ module.exports = {
     name: 'HTML Color Codes',
     themeColor: '#DAF0EE',
     msTileColor: '#DAF0EE',
+    backgroundColor: '#DAF0EE',
     mobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'default',
     start_url: '.',
