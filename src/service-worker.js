@@ -1,4 +1,4 @@
-workbox.core.setCacheNameDetails({ prefix: 'MyNotes' })
+workbox.core.setCacheNameDetails({ prefix: 'ColorCodes' })
 
 workbox.core.skipWaiting()
 
