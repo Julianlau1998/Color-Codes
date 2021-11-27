@@ -80,7 +80,7 @@ export default {
         border-top: 2px solid rgb(165, 165, 165) !important;
         white-space: nowrap;
         padding-bottom: 1.2rem;
-        z-index: -1;
+        z-index: 2;
     }
     .link {
         color: black;
