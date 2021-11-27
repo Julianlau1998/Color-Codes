@@ -51,6 +51,7 @@ export default {
             return this.fileUrl
         }
     },
+    
     created () {
         this.canvasWidth = window.innerWidth * 0.45
         this.fileUrl = localStorage.getItem('test')
