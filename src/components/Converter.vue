@@ -159,7 +159,7 @@ export default {
 
 <style scoped>
     .converter {
-        margin-top: 6.5rem;
+        margin-top: 5.5rem;
         z-index: 10;
         background-color: #ffffff;
         width: 100vw;
