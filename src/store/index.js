@@ -6,8 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     converter: false,
-    color_picker: true,
-    image_picker: false,
+    color_picker: false,
+    image_picker: true,
     componentTransition: 'swipe-component-left',
     base64: ''
   },

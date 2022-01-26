@@ -53,7 +53,7 @@ export default {
     },
     
     created () {
-        this.canvasWidth = window.innerWidth * 0.45
+        this.canvasHeight = window.innerHeight * 2
         this.fileUrl = localStorage.getItem('test')
     },
     methods: {
